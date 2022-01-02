@@ -1,0 +1,40 @@
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    min-height:100%;
+    position:relative;
+}
+
+body{
+    height:100%;
+}
+
+#twitch{
+    position:absolute;
+    overflow:hidden;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+#youtube{
+    position:absolute;
+    overflow:hidden;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
