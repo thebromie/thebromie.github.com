@@ -9,6 +9,7 @@ function PopUp(){
     } else {
         document.getElementById("youtube").style.display = "none";
         document.getElementById("twitch").style.width = "100%";
+        window.alert("No YouTube LiveStream Found");
     }
     }
     };
