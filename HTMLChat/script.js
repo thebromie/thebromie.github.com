@@ -1,7 +1,7 @@
 function PopUp(){
     let ChannelID = "UC7C948AM_7cNIORd22Rr_SQ";
     var xhr = new XMLHttpRequest();
-    var key = config.SECRET_API_KEY;
+    var key = AIzaSyD3GqHtog__j_ef47-sF00-g-ZSvrkIMR4;
     xhr.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
     let result = JSON.parse(xhr.responseText);
