@@ -14,6 +14,12 @@ function LiveFinder(){
         console.log("Stream Found! :)");
         document.getElementById("youtubeFrame").src = `https://www.youtube.com/live_chat?v=${result.items[0].id.videoId}&embed_domain=www.thebromie.com`;
         clearInterval(LiveInterval);
+        var head = jQuery("#youtubeFrame").contents().find("head");
+        var css = '<style type="text/css">' +
+                  'yt-live-chat-header-renderer, #input-panel, #item-scroller{display:none}; ' +
+                  '</style>';
+        jQuery(head).append(css);
+        jQuery("#youtubeFrame").contents().find("body").contents() = jQuery("#youtubeFrame").contents().find("body").contents().replace("allow-scroll", "");
     } else {
         document.getElementById("youtube").style.display = "none";
         document.getElementById("twitch").style.width = "100%";
