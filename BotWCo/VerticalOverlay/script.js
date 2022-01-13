@@ -3,7 +3,7 @@ const LiveInterval = setInterval(LiveFinder(), 60000);
 function LiveFinder(){
     //Big Thanks to Komali for the API Search Code
     //https://github.com/PrinceKomali
-    let ChannelID = "UCyjLtNOpUsPzJcudxNYpoaQ"; //"UC7C948AM_7cNIORd22Rr_SQ";
+    let ChannelID = "UCSJ4gkVC6NrvII8umztf0Ow"; //"UC7C948AM_7cNIORd22Rr_SQ";
     let key = "AIzaSyD3GqHtog__j_ef47-sF00-g-ZSvrkIMR4";
     var xhr = new XMLHttpRequest();
     
@@ -14,13 +14,8 @@ function LiveFinder(){
         console.log("Stream Found! :)");
         document.getElementById("youtubeFrame").src = `https://www.youtube.com/live_chat?v=${result.items[0].id.videoId}&embed_domain=www.thebromie.com`;
         clearInterval(LiveInterval);
-        var head = jQuery("#youtubeFrame").contents().find("head");
-        var css = '<style type="text/css">' +
-                  'yt-live-chat-header-renderer, #input-panel, #item-scroller{display:none}; ' +
-                  '</style>';
-        jQuery(head).append(css);
-        jQuery("#youtubeFrame").contents().find("body").contents() = jQuery("#youtubeFrame").contents().find("body").contents().replace("allow-scroll", "");
-    } else {
+    } 
+    else {
         document.getElementById("youtube").style.display = "none";
         document.getElementById("twitch").style.width = "100%";
         console.log("No livestream found :(");
