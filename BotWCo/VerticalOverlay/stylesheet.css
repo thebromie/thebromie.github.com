@@ -1,0 +1,57 @@
+* {
+    margin:0;
+    padding:0;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+html{
+    min-height:100%;
+    position: relative;
+}
+
+body{
+    height:100%;
+}
+
+#twitch{
+    position: absolute;
+    overflow:hidden;
+    padding: 0;
+    margin: 0;
+    height: 60%;
+    width: 100%;
+    top: 0%;
+}
+
+#youtube{
+    position: absolute;
+    overflow:hidden;
+    padding: 0;
+    margin: 0;
+    height: 40%;
+    width: 100%;
+    top: 60%;
+}
+
+iframe{
+    position: absolute;
+    overflow:hidden;
+    padding: 0;
+    margin: 0;
+    height: 95%;
+    width: 100%;
+    top: 5%;
+}
+
+.Logo{
+    position: absolute;
+    overflow:hidden;
+    padding: 0;
+    margin: 0;
+    height: 5%;
+    top: 0%;
+}

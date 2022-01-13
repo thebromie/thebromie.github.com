@@ -1,9 +1,10 @@
-function PopUp(){
+function LiveFinder(){
     //Big Thanks to Komali for the API Search Code
     //https://github.com/PrinceKomali
     let ChannelID = "UC7C948AM_7cNIORd22Rr_SQ";
+    let key = "AIzaSyD3GqHtog__j_ef47-sF00-g-ZSvrkIMR4";
     var xhr = new XMLHttpRequest();
-    var key = "AIzaSyD3GqHtog__j_ef47-sF00-g-ZSvrkIMR4";
+    
     xhr.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
     let result = JSON.parse(xhr.responseText);
@@ -12,7 +13,7 @@ function PopUp(){
     } else {
         document.getElementById("youtube").style.display = "none";
         document.getElementById("twitch").style.width = "100%";
-        window.alert("No YouTube LiveStream Found");
+        console.log("No livestream found :(");
     }
     }
     };
@@ -21,7 +22,5 @@ function PopUp(){
 }
 
 window.onload = function(){
-    setTimeout(function(){
-        PopUp();
-    },0);
+    setInterval(LiveFinder(), 60000);
 }
