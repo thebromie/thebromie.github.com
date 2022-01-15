@@ -36,8 +36,13 @@ function LiveFinder(){
 }
 
 function EditTwitchChat(){
-
+    var cssLink = document.createElement("link");
+    cssLink.href = "TwitchStyle.css";  
+    cssLink.rel = "stylesheet";  
+    cssLink.type = "text/css";  
+    frames['twitchFrame'].document.body.appendChild(cssLink); 
 }
+
 function EditYouTubeChat(){
     var cssLink = document.createElement("link");
     cssLink.href = "YouTubeStyle.css";  
