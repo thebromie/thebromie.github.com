@@ -3,7 +3,8 @@ const key = "AIzaSyBtM74JgizdgwXMcf0mjoVA8AvsNWg8VZs";
 let ChannelID = //"UCSJ4gkVC6NrvII8umztf0Ow"; 
     "UC7C948AM_7cNIORd22Rr_SQ";
 
-EditTwitchChat();
+twitchFrame.onload = function(){EditTwitchChat();};
+
 var LiveInterval = setInterval(LiveFinder, 60000);
 
 function LiveFinder(){
