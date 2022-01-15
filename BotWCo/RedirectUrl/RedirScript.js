@@ -4,7 +4,7 @@ function LiveFinder(){
     
     let ChannelID = "UCSJ4gkVC6NrvII8umztf0Ow";
     
-    let key = "AIzaSyD3GqHtog__j_ef47-sF00-g-ZSvrkIMR4";
+    let key = `AIzaSyD3GqHtog__j_ef47-sF00-g-ZSvrkIMR4`;
     var xhr = new XMLHttpRequest();
     
     xhr.onreadystatechange = function() {
