@@ -2,7 +2,7 @@ function LiveFinder(){
     //Big Thanks to Komali for the API Search Code
     //https://github.com/PrinceKomali
     
-    let ChannelID = "UCSJ4gkVC6NrvII8umztf0Ow";
+    let ChannelID = "UC7C948AM_7cNIORd22Rr_SQ";
     
     let key = `AIzaSyBtM74JgizdgwXMcf0mjoVA8AvsNWg8VZs`;
     var xhr = new XMLHttpRequest();
