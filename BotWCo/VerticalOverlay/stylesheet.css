@@ -15,6 +15,7 @@ html{
 
 body{
     height:100%;
+    
 }
 
 #twitch{
@@ -25,6 +26,7 @@ body{
     height: 60%;
     width: 100%;
     top: 0%;
+    filter: drop-shadow(0 0 1px black);
 }
 
 #youtube{
@@ -35,6 +37,7 @@ body{
     height: 40%;
     width: 100%;
     top: 60%;
+    filter: drop-shadow(0 0 1px black);
 }
 
 iframe{
@@ -42,9 +45,9 @@ iframe{
     overflow:hidden;
     padding: 0;
     margin: 0;
-    height: 95%;
+    height: 93%;
     width: 100%;
-    top: 5%;
+    top: 7%;
 }
 
 .Logo{
@@ -52,6 +55,6 @@ iframe{
     overflow:hidden;
     padding: 0;
     margin: 0;
-    height: 5%;
+    height: 7%;
     top: 0%;
 }
