@@ -21,6 +21,7 @@ function LiveFinder(){
                 document.getElementById("twitch").style.height = "60%";
                 clearInterval(LiveInterval);
                 console.log("Livestream Found :)");
+                EditYouTubeChat();
             } 
             else {
                 $('#youtube').hide();
