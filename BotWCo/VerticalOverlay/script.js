@@ -1,7 +1,7 @@
 const key = "AIzaSyBtM74JgizdgwXMcf0mjoVA8AvsNWg8VZs";
     //"AIzaSyD3GqHtog__j_ef47-sF00-g-ZSvrkIMR4";
-let ChannelID = "UCSJ4gkVC6NrvII8umztf0Ow"; 
-    //"UC7C948AM_7cNIORd22Rr_SQ";
+let ChannelID = //"UCSJ4gkVC6NrvII8umztf0Ow"; 
+    "UC7C948AM_7cNIORd22Rr_SQ";
 
 var LiveInterval = setInterval(LiveFinder, 60000);
 
