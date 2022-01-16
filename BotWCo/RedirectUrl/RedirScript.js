@@ -22,5 +22,4 @@ function LiveFinder(){
     xhr.send();
 }
 
-LiveFinder();
 setInterval(LiveFinder, 30000);
